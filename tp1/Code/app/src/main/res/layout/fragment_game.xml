@@ -1,0 +1,207 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="gameViewModel"
+            type="com.example.inf8405.screens.game.GameViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:background="@color/purple">
+
+        <LinearLayout
+            android:id="@+id/top_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/game_grid_view"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:id="@+id/puzzle_nav_container"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="0.65"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_rect_md"
+                >
+                <LinearLayout
+                    android:id="@+id/previous_container"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="invisible"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/previous_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?android:selectableItemBackground"
+                        android:src="@drawable/ic_arrow_back"
+                        android:onClick="setPreviousPuzzle"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/current_puzzle_container"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    >
+                    <TextView
+                        android:id="@+id/current_puzzle_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Puzzle"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/current_puzzle_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@{Integer.toString(gameViewModel.currentPuzzleNumber)}"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/next_container"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    >
+                    <ImageButton
+                        android:id="@+id/next_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?android:selectableItemBackground"
+                        android:src="@drawable/ic_arrow_forward"
+                        android:onClick="setNextPuzzle"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/stats_container"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_weight="0.35"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_rect_md"
+                >
+
+                <TextView
+                    android:id="@+id/move_counter_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Moves"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/move_counter_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@{Integer.toString(gameViewModel.moveCounter)}"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center" />
+
+
+                <TextView
+                    android:id="@+id/record_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Record: --/"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.example.inf8405.screens.game.GameGridView
+            android:id="@+id/game_grid_view"
+            android:layout_width="@dimen/grid_width"
+            android:layout_height="@dimen/grid_height"
+            android:background="@drawable/grid_background"
+            app:layout_constraintTop_toBottomOf="@id/top_container"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/actions_container"/>
+
+
+        <LinearLayout
+            android:id="@+id/actions_container"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/game_grid_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:gravity="center"
+            >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Menu"
+                android:background="@drawable/btn_secondary"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:paddingHorizontal="8dp"
+                android:layout_marginEnd="16dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/undo_button"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Undo"
+                android:background="@drawable/btn_secondary"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:paddingHorizontal="8dp"
+                android:layout_marginEnd="16dp"
+                android:onClick="@{() -> gameViewModel.undoMove()}"
+                android:enabled="@{gameViewModel.canUndo}"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/reset_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restart"
+                android:background="@drawable/btn_secondary"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:paddingHorizontal="8dp"
+                android:onClick="resetPuzzle"
+                android:paddingVertical="0dp"
+                />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

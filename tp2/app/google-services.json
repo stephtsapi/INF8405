@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "96415553505",
+    "project_id": "polymaps-7b387",
+    "storage_bucket": "polymaps-7b387.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96415553505:android:c3bc1065db2cd5631324a0",
+        "android_client_info": {
+          "package_name": "aa.aa.aa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "96415553505-hdjeft3lcvduhgf21pq7kdgtr4atlqfp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVYIBmlgTiO21iaUfgPDmJPpCAW2zJjvY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "96415553505-hdjeft3lcvduhgf21pq7kdgtr4atlqfp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96415553505:android:b9db24704040f8701324a0",
+        "android_client_info": {
+          "package_name": "com.example.polymaps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "96415553505-hdjeft3lcvduhgf21pq7kdgtr4atlqfp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVYIBmlgTiO21iaUfgPDmJPpCAW2zJjvY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "96415553505-hdjeft3lcvduhgf21pq7kdgtr4atlqfp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

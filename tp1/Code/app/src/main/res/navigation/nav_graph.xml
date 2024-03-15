@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/HoneFragment">
+
+    <fragment
+        android:id="@+id/HoneFragment"
+        android:name="com.example.inf8405.screens.home.HomeFragment"
+        android:label="Home Fragment"
+        tools:layout="@layout/fragment_home"
+        >
+        <action
+            android:id="@+id/action_HoneFragment_to_AboutFragment"
+            app:destination="@id/AboutFragment" />
+        <action
+            android:id="@+id/action_HoneFragment_to_GameFragment"
+            app:destination="@id/GameFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/GameFragment"
+        android:name="com.example.inf8405.screens.game.GameFragment"
+        android:label="Game Fragment"
+        tools:layout="@layout/fragment_game">
+        <action
+            android:id="@+id/action_GameFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.inf8405.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.inf8405.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/AboutFragment"
+        android:name="com.example.inf8405.screens.about.AboutFragment"
+        android:label="@string/about_fragment_label"
+        tools:layout="@layout/fragment_about">
+
+    </fragment>
+</navigation>

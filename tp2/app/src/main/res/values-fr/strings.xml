@@ -1,0 +1,109 @@
+<resources>
+    <!-- Splash screen -->
+    <string name="app_name">PolyMaps</string>
+    <string name="version">Version 2.0</string>
+    <string name="developers">Paul Marie Akoffodji\nAntoine Déry\nMoustapha Dienta\nMajid Djido</string>
+
+    <!-- Fragment name (bottom navigation) -->
+    <string name="map_fragment_label">Carte</string>
+    <string name="favorites_fragment_label">Favoris</string>
+    <string name="settings_fragment_label">Réglages</string>
+
+    <!-- Map fragment -->
+    <string name="nearby_devices">Appareils détectés à proximité</string>
+    <string name="no_devices">Aucun appareil détecté</string>
+
+    <!-- Dialog -->
+    <string name="details">Details</string>
+    <string name="device_name">Nom</string>
+    <string name="device_address">Adresse MAC</string>
+    <string name="device_position">Position</string>
+    <string name="device_type">Type</string>
+    <string name="device_distance">Distance</string>
+    <string name="add_to_favorites">Ajouter aux favoris</string>
+    <string name="remove_from_favorites">Retirer des favoris</string>
+    <string name="share">Partager</string>
+    <string name="get_directions">Comment y aller ?</string>
+
+    <!-- Favorites fragment -->
+    <string name="favorite_devices">Appareils favoris</string>
+    <string name="no_favorites">Aucun favori</string>
+    <string name="added_to_favorites">L\'appareil a été ajouté aux favoris</string>.
+    <string name="removed_from_favorites">L\'appareil a été supprimé des favoris</string>
+
+    <!-- Settings fragment -->
+    <string name="dark_theme">Thème sombre</string>
+    <string name="language">Langue</string>
+    <string name="current_power">Consommation d\'énergie actuelle : %d mW</string>
+    <string name="current_level">Niveau actuel de la batterie : %d%%</string>
+    <string name="down_speed">Consommation d\'uplink actuelle : %d Ko/s</string>
+    <string name="up_speed">Consommation de downlink actuelle : %d Ko/s</string>
+
+    <!-- Bluetooth devices -->
+    <string name="meters">mètres</string>
+    <string name="unknown_device_name">Nom inconnu</string>
+    <string name="detected_share">J\'ai trouvé cet appareil sur PolyMaps :</string>
+    <string name="audio_video_camcorder">Caméscope</string>
+    <string name="audio_video_car_audio">Audio de voiture</string>
+    <string name="audio_video_handsfree">Kit mains libres</string>
+    <string name="audio_video_headphones">Écouteurs</string>
+    <string name="audio_video_hifi_audio">Audio Hi-Fi</string>
+    <string name="audio_video_loudspeaker">Haut-parleur</string>
+    <string name="audio_video_microphone">Microphone</string>
+    <string name="audio_video_portable_audio">Audio portable</string>
+    <string name="audio_video_set_top_box">Décodeur TV</string>
+    <string name="audio_video_uncategorized">Appareil audio/vidéo non catégorisé</string>
+    <string name="audio_video_vcr">Magnétoscope</string>
+    <string name="audio_video_video_camera">Caméra vidéo</string>
+    <string name="computer_desktop">Ordinateur de bureau</string>
+    <string name="computer_handheld_pc_pda">Ordinateur portable/PDA</string>
+    <string name="computer_laptop">Ordinateur portable</string>
+    <string name="computer_palm_size_pc_pda">Ordinateur de poche/PDA</string>
+    <string name="computer_server">Ordinateur serveur</string>
+    <string name="computer_uncategorized">Ordinateur non catégorisé</string>
+    <string name="health_blood_pressure">Moniteur de tension artérielle</string>
+    <string name="health_data_display">Affichage de données de santé</string>
+    <string name="health_glucose">Tensiomètre</string>
+    <string name="health_pulse_oximeter">Oxymètre de pouls</string>
+    <string name="health_pulse_rate">Moniteur de fréquence cardiaque</string>
+    <string name="health_thermometer">Thermomètre</string>
+    <string name="health_uncategorized">Appareil de santé non catégorisé</string>
+    <string name="health_weighing">Balance</string>
+    <string name="phone_cellular">Téléphone portable</string>
+    <string name="phone_cordless">Téléphone sans fil</string>
+    <string name="phone_isdn">Téléphone ISDN</string>
+    <string name="phone_modem_or_gateway">Modem ou passerelle</string>
+    <string name="phone_smart">Téléphone intelligent</string>
+    <string name="phone_uncategorized">Téléphone non catégorisé</string>
+    <string name="toy_controller">Manette de jeu</string>
+    <string name="toy_doll_action_figure">Poupée/Figurine d\'action</string>
+    <string name="toy_game">Jeu</string>
+    <string name="toy_robot">Robot</string>
+    <string name="toy_uncategorized">Jouet non catégorisé</string>
+    <string name="toy_vehicle">Véhicule</string>
+    <string name="wearable_glasses">Lunettes</string>
+    <string name="wearable_helmet">Casque</string>
+    <string name="wearable_jacket">Veste</string>
+    <string name="wearable_pager">Pager</string>
+    <string name="wearable_uncategorized">Appareil portable non catégorisé</string>
+    <string name="wearable_wrist_watch">Montre-bracelet</string>
+    <string name="unknown_device_type">Type d\'appareil inconnu</string>
+    <string name="email">Email</string>
+    <string name="password">Mot de passe</string>
+    <string name="sign_up">Créer un compte</string>
+    <string name="login">Connexion</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="login_fragment_label">Login Fragment Label</string>
+    <string name="sign_up_fragment_label">Sign Up Fragment Label</string>
+    <string name="user_email_placeholder">Email</string>
+    <string name="don_t_have_an_account_yet">Vous n\'avez pas de compte ?&#160;</string>
+    <string name="already_have_an_account">Vous avez déjà un compte ?&#160;</string>
+    <string name="log_out">Déconnexion</string>
+    <string name="accelerometer_label">Acceleromètre : (%s) m/s^2</string>
+    <string name="motion_label">Mouvement : %s</string>
+    <string name="stable">stable</string>
+    <string name="abrupt">brusque</string>
+    <string name="log_out_sure">Voulez-vous vous déconnecter ?</string>
+    <string name="cancel">Annuler</string>
+
+</resources>

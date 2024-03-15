@@ -1,0 +1,109 @@
+<resources>
+    <!-- Splash screen -->
+    <string name="app_name">PolyMaps</string>
+    <string name="version">Version 2.0</string>
+    <string name="developers">Paul Marie Akoffodji\nAntoine Déry\nMoustapha Dienta\nMajid Djido</string>
+
+    <!-- Fragment name (bottom navigation) -->
+    <string name="map_fragment_label">Map</string>
+    <string name="favorites_fragment_label">Favorites</string>
+    <string name="settings_fragment_label">Settings</string>
+
+    <!-- Map fragment -->
+    <string name="nearby_devices">Devices detected nearby</string>
+    <string name="no_devices">No device detected</string>
+
+    <!-- Dialog -->
+    <string name="details">Details</string>
+    <string name="device_name">Name</string>
+    <string name="device_address">MAC Address</string>
+    <string name="device_position">Position</string>
+    <string name="device_type">Type</string>
+    <string name="device_distance">Distance</string>
+    <string name="add_to_favorites">Add to favorites</string>
+    <string name="remove_from_favorites">Remove from favorites</string>
+    <string name="share">Share</string>
+    <string name="get_directions">How to go?</string>
+
+    <!-- Favorites fragment -->
+    <string name="favorite_devices">Favorites Devices</string>
+    <string name="no_favorites">No favorites detected</string>
+    <string name="added_to_favorites">Device was added to favorites</string>.
+    <string name="removed_from_favorites">Device was removed from favorites</string>
+
+    <!-- Settings fragment -->
+    <string name="dark_theme">Dark Theme</string>
+    <string name="language">Language</string>
+    <string name="current_power">Current power consumption: %d mW</string>
+    <string name="current_level">Current battery consumption: %d%%</string>
+    <string name="down_speed">Current downlink consumption: %d Ko/s</string>
+    <string name="up_speed">Current uplink consumption: %d Ko/s</string>
+
+    <!-- Bluetooth devices -->
+    <string name="meters">meters</string>
+    <string name="unknown_device_name">Unknown Device Name</string>
+    <string name="detected_share">I detected this device on PolyMaps:</string>
+    <string name="audio_video_camcorder">Camcorder</string>
+    <string name="audio_video_car_audio">Car Audio</string>
+    <string name="audio_video_handsfree">Handsfree</string>
+    <string name="audio_video_headphones">Headphones</string>
+    <string name="audio_video_hifi_audio">HiFi Audio</string>
+    <string name="audio_video_loudspeaker">Loudspeaker</string>
+    <string name="audio_video_microphone">Microphone</string>
+    <string name="audio_video_portable_audio">Portable Audio</string>
+    <string name="audio_video_set_top_box">Set-top Box</string>
+    <string name="audio_video_uncategorized">Uncategorized Audio/Video Device</string>
+    <string name="audio_video_vcr">VCR</string>
+    <string name="audio_video_video_camera">Video Camera</string>
+    <string name="computer_desktop">Desktop Computer</string>
+    <string name="computer_handheld_pc_pda">Handheld Computer</string>
+    <string name="computer_laptop">Laptop</string>
+    <string name="computer_palm_size_pc_pda">Palm-size Computer</string>
+    <string name="computer_server">Server Computer</string>
+    <string name="computer_uncategorized">Uncategorized Computer</string>
+    <string name="health_blood_pressure">Blood Pressure Monitor</string>
+    <string name="health_data_display">Data Display</string>
+    <string name="health_glucose">Glucose Meter</string>
+    <string name="health_pulse_oximeter">Pulse Oximeter</string>
+    <string name="health_pulse_rate">Pulse Rate Monitor</string>
+    <string name="health_thermometer">Thermometer</string>
+    <string name="health_uncategorized">Uncategorized Health Device</string>
+    <string name="health_weighing">Weighing Scale</string>
+    <string name="phone_cellular">Cellular Phone</string>
+    <string name="phone_cordless">Cordless Phone</string>
+    <string name="phone_isdn">ISDN Phone</string>
+    <string name="phone_modem_or_gateway">Modem or Gateway</string>
+    <string name="phone_smart">Smart Phone</string>
+    <string name="phone_uncategorized">Uncategorized Phone</string>
+    <string name="toy_controller">Controller</string>
+    <string name="toy_doll_action_figure">Doll/Action Figure</string>
+    <string name="toy_game">Game</string>
+    <string name="toy_robot">Robot</string>
+    <string name="toy_uncategorized">Uncategorized Toy</string>
+    <string name="toy_vehicle">Vehicle</string>
+    <string name="wearable_glasses">Glasses</string>
+    <string name="wearable_helmet">Helmet</string>
+    <string name="wearable_jacket">Jacket</string>
+    <string name="wearable_pager">Pager</string>
+    <string name="wearable_uncategorized">Uncategorized Wearable Device</string>
+    <string name="wearable_wrist_watch">Wrist Watch</string>
+    <string name="unknown_device_type">Unknown Device Type</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="login_fragment_label">Login Fragment Label</string>
+    <string name="sign_up_fragment_label">Sign Up Fragment Label</string>
+    <string name="user_email_placeholder">Email</string>
+    <string name="don_t_have_an_account_yet">Don\'t have an account yet?&#160;</string>
+    <string name="already_have_an_account">Already have an account?&#160;</string>
+    <string name="log_out">Log Out</string>
+    <string name="accelerometer_label">Accelerometer: (%s) m/s^2</string>
+    <string name="motion_label">Movement: %s</string>
+    <string name="stable">stable</string>
+    <string name="abrupt">abrupt</string>
+    <string name="log_out_sure">Are you sure you want to log out?</string>
+    <string name="cancel">Cancel</string>
+
+</resources>

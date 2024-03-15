@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bluefacebook">#2196F3</color>
+
+    <color name="grid_background_color">#f2eacd</color>
+    <color name="main_background_color">@color/dark_purple</color>
+    <color name="grid_separator">#FF000000</color>
+    <color name="block_color">#328899</color>
+    <color name="shadow_color">@color/black</color>
+
+
+    <color name="purple">#7945FF</color>
+    <color name="dark_purple">#5C2DD5</color>
+    <color name="my_red">#cc3333</color>
+
+    <color name="pink">#FD6687</color>
+    <color name="yellow">#FFCE67</color>
+</resources>

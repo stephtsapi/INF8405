@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="grid_width">348dp</dimen>
+    <dimen name="grid_height">348dp</dimen>
+    <dimen name="block_width">58dp</dimen>
+    <dimen name="block_height">58dp</dimen>
+    <dimen name="block_size">58dp</dimen>
+</resources>
