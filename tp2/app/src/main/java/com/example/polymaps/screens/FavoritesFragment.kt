@@ -2,6 +2,7 @@ package com.example.polymaps.screens
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -39,7 +40,7 @@ class FavoritesFragment : Fragment(), FavoritesDevicesListener {
         // Fonction appelée lorsque l'utilisateur clique sur le bouton "Add to/Remove from favorites" dans le dialogue
         val onAddOrRemoveFavoriteClickListener = { position: Int ->
             val selectedItem = listAdapter.getItem(position)
-            FavoritesDevices.addOrRemoveFromList(selectedItem, this)
+            FavoritesDevices.addOrRemoveFromList(selectedItem, this, requireContext())
         }
 
         // Fonction appelée lorsque l'utilisateur clique sur le bouton "Share" dans le dialogue
@@ -74,7 +75,7 @@ class FavoritesFragment : Fragment(), FavoritesDevicesListener {
         val emptyTextView = view?.findViewById<TextView>(R.id.no_favorite_list)
 
         try {
-            FavoritesDevices.getFavoriteList { list ->
+            FavoritesDevices.getFavoriteList(requireContext()) { list ->
                 listAdapter = CustomListAdapter(requireContext(), list as ArrayList<DetectedDevice>)
                 favoritesListView?.adapter = listAdapter
 
@@ -94,7 +95,7 @@ class FavoritesFragment : Fragment(), FavoritesDevicesListener {
 
 
     override fun onFavoritesChanged() {
-        FavoritesDevices.getFavoriteList { list ->
+        FavoritesDevices.getFavoriteList(requireContext()) { list ->
             listAdapter.updateDevices(list)
 
             val emptyTextView = view?.findViewById<TextView>(R.id.no_favorite_list)

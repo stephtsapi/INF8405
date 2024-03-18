@@ -1,29 +1,26 @@
 package com.example.polymaps
 
 import android.content.Context
-import android.util.Log
-import android.widget.Toast
 import com.example.polymaps.database.DatabaseManager
-import com.example.polymaps.utils.CustomListAdapter
 
 interface FavoritesDevicesListener {
     fun onFavoritesChanged()
 }
 
 object FavoritesDevices {
-    fun getFavoriteList(listener: (List<DetectedDevice>) -> Unit) {
-        DatabaseManager.getInstance().getFavoriteDevices(listener)
+    fun getFavoriteList(context: Context, listener: (List<DetectedDevice>) -> Unit) {
+        DatabaseManager.getInstance(context).getFavoriteDevices(listener)
     }
 
-    fun addOrRemoveFromList(selectedItem: DetectedDevice, listener: FavoritesDevicesListener) {
+    fun addOrRemoveFromList(selectedItem: DetectedDevice, listener: FavoritesDevicesListener, context: Context) {
         val newIsFavorite = !selectedItem.isFavorite
         if (newIsFavorite) {
             selectedItem.isFavorite = true
-            DatabaseManager.getInstance().addToFavorites(selectedItem)
+            DatabaseManager.getInstance(context).addToFavorites(selectedItem)
             listener.onFavoritesChanged()
         } else {
             selectedItem.isFavorite = false
-            DatabaseManager.getInstance().removeFromFavorites(selectedItem)
+            DatabaseManager.getInstance(context).removeFromFavorites(selectedItem)
             listener.onFavoritesChanged()
         }
     }

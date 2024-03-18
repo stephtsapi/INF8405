@@ -43,6 +43,7 @@ import com.example.polymaps.auth.AuthManager
 import com.example.polymaps.auth.AuthViewModel
 import com.example.polymaps.auth.AuthViewModelFactory
 import com.example.polymaps.screens.*
+import com.example.polymaps.database.DatabaseManager
 
 
 
@@ -109,7 +110,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
                                         newPosition,
                                         DetectedDevices.getDeviceType((device), context),
                                         "${distance.roundToInt()} m",
-                                        false
+                                        DatabaseManager.getInstance(context).isFavorite(device.address)
                                     )
                                     DetectedDevices.getDeviceList().add(detectedDevice)
                                     mapViewModel.addDeviceLocation(deviceName, newPosition)

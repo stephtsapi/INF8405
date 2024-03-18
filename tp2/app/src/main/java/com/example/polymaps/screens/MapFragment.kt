@@ -59,7 +59,7 @@ class MapFragment : Fragment(), OnMapReadyCallback, OnMarkerClickListener, Favor
         // Fonction appelée lorsque l'utilisateur clique sur le bouton "Add to/Remove from favorites" dans le dialogue
         val onAddOrRemoveFavoriteClickListener = { position: Int ->
 //            FavoritesDevices.addOrRemoveFromList(DetectedDevices.getDeviceList()[position], DetectedDevices.getListAdapter(), requireContext())
-            FavoritesDevices.addOrRemoveFromList(DetectedDevices.getDeviceList()[position], this)
+            FavoritesDevices.addOrRemoveFromList(DetectedDevices.getDeviceList()[position], this, requireContext())
         }
 
 
@@ -180,7 +180,7 @@ class MapFragment : Fragment(), OnMapReadyCallback, OnMarkerClickListener, Favor
 
     private fun toggleFavorite(position: Int) {
 //        FavoritesDevices.addOrRemoveFromList(DetectedDevices.getDeviceList()[position], DetectedDevices.getListAdapter(), requireContext())
-        FavoritesDevices.addOrRemoveFromList(DetectedDevices.getDeviceList()[position], this)
+        FavoritesDevices.addOrRemoveFromList(DetectedDevices.getDeviceList()[position], this, requireContext())
         DetectedDevices.getListAdapter().notifyDataSetChanged()
     }
 
