@@ -1,8 +1,8 @@
 <resources>
     <!-- Splash screen -->
-    <string name="app_name">PolyMaps</string>
-    <string name="version">Version 2.0</string>
-    <string name="developers">Paul Marie Akoffodji\nAntoine Déry\nMoustapha Dienta\nMajid Djido</string>
+    <string name="app_name">MapsApp</string>
+    <string name="version">Version 2.1</string>
+    <string name="developers">Erika Fossouo\nYann Steph TSAPI II\nDebanjan Bhaumick\nIdir Benbelkacem</string>
 
     <!-- Fragment name (bottom navigation) -->
     <string name="map_fragment_label">Map</string>

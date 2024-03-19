@@ -84,11 +84,9 @@ class FavoritesFragment : Fragment(), FavoritesDevicesListener {
                 if (arrayList.isEmpty()) {
                     emptyTextView?.visibility = View.VISIBLE
                     favoritesListView?.visibility = View.GONE
-                    Log.d("Vérification liste vide", "Bon bah la liste est vide $list")
                 } else {
                     emptyTextView?.visibility = View.GONE
                     favoritesListView?.visibility = View.VISIBLE
-                    Log.d("Vérification liste vide", "en principe, elle n est pas vide $list")
                 }
             }
         } catch (e: Exception) {
