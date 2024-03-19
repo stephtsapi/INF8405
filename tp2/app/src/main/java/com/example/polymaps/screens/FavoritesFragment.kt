@@ -3,6 +3,7 @@ package com.example.polymaps.screens
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -76,15 +77,18 @@ class FavoritesFragment : Fragment(), FavoritesDevicesListener {
 
         try {
             FavoritesDevices.getFavoriteList(requireContext()) { list ->
-                listAdapter = CustomListAdapter(requireContext(), list as ArrayList<DetectedDevice>)
+                val arrayList = ArrayList<DetectedDevice>(list)
+                listAdapter = CustomListAdapter(requireContext(), arrayList)
                 favoritesListView?.adapter = listAdapter
 
-                if (list.isEmpty()) {
+                if (arrayList.isEmpty()) {
                     emptyTextView?.visibility = View.VISIBLE
                     favoritesListView?.visibility = View.GONE
+                    Log.d("Vérification liste vide", "Bon bah la liste est vide $list")
                 } else {
                     emptyTextView?.visibility = View.GONE
                     favoritesListView?.visibility = View.VISIBLE
+                    Log.d("Vérification liste vide", "en principe, elle n est pas vide $list")
                 }
             }
         } catch (e: Exception) {
